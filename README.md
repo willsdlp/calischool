@@ -1,4 +1,4 @@
-See transparent-california.org for data sets
+See https://transparentcalifornia.com for data sets
 
 Download desired dataset from https://transparentcalifornia.com and save to transparentCaliforniaData/
 

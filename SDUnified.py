@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # download csv file from Transparent-california.com
 # df = pd.read_csv('chula-vista-elementary-2020.csv')
-df = pd.read_csv('san-diego-unified-2021.csv')
+df = pd.read_csv('transparentCaliforniaData/san-diego-unified-2021.csv')
 
 # Find all employees that are teachers
 teachers = df[df["Job Title"].str.contains("Regular Teacher")]

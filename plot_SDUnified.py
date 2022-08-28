@@ -2,10 +2,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # download csv file from https://transparentcalifornia.com/
-df = pd.read_csv('transparentCaliforniaData/chula-vista-elementary-2020.csv')
+df = pd.read_csv('transparentCaliforniaData/san-diego-unified-2021.csv')
 
 # Find all employees that are teachers
-teachers = df[df["Job Title"].str.contains("Teacher")]
+teachers = df[df["Job Title"].str.contains("Regular Teacher")]
 # remove hourly teachers
 teachers = teachers[teachers["Job Title"].str.contains("Hrly") == False]
 # remove special teachers
@@ -35,5 +35,5 @@ plt.xlabel("Pay $")
 plt.axvline(x=netPayMean, color='r', label='Mean: {:10.2f}'.format(netPayMean))
 plt.axvline(x=netPayMedian, color='k', label='Median: {:10.2f}'.format(netPayMedian))
 plt.legend()
-plt.title("Chula Vista 2020")
+plt.title("San Diego Unified")
 plt.show()
